@@ -4307,11 +4307,10 @@ function GoGo_ZoneCheck()
 		end --if
 		GoGo_Variables.ZoneExclude.CanFly = true
 	elseif GoGo_Variables.Player.MapID == 2118 then
-		GoGo_Variables.ZoneExclude.DragonRiding = true
 		if GoGo_Variables.Debug >= 10 then
 			GoGo_DebugAddLine("GoGo_ZoneCheck: The Forbidden Reach - The Old Weyrn Grounds")
 		end --if
-		GoGo_Variables.ZoneExclude.CanFly = true
+		GoGo_Variables.ZoneExclude.CanFly = false
 	elseif GoGo_Variables.Player.MapID == 2151 then
 		GoGo_Variables.ZoneExclude.DragonRiding = true
 		if GoGo_Variables.Debug >= 10 then
