@@ -4253,6 +4253,12 @@ function GoGo_ZoneCheck()
 		end --if
 		local _, _, _, completed = GetAchievementInfo(GoGo_Variables.Localize.UnlockingTheSecret)
 		GoGo_Variables.ZoneExclude.CanFly = completed
+	elseif GoGo_Variables.Player.MapID == 1978 then -- The Waking Shores - Alliance Boat & Horde Zeppelin
+		GoGo_Variables.ZoneExclude.DragonRiding = true
+		if GoGo_Variables.Debug >= 10 then
+			GoGo_DebugAddLine("GoGo_ZoneCheck: Setting up for The Waking Shores - Alliance Boat & Horde Zeppelin")
+		end --if
+		GoGo_Variables.ZoneExclude.CanFly = true
 	elseif GoGo_Variables.Player.MapID == 2022 then -- The Waking Shores - Obsidian Bulwark
 		GoGo_Variables.ZoneExclude.DragonRiding = true
 		if GoGo_Variables.Debug >= 10 then
@@ -4301,10 +4307,35 @@ function GoGo_ZoneCheck()
 		end --if
 		GoGo_Variables.ZoneExclude.CanFly = true
 	elseif GoGo_Variables.Player.MapID == 2118 then
+		GoGo_Variables.ZoneExclude.DragonRiding = true
 		if GoGo_Variables.Debug >= 10 then
 			GoGo_DebugAddLine("GoGo_ZoneCheck: The Forbidden Reach - The Old Weyrn Grounds")
 		end --if
-		GoGo_Variables.ZoneExclude.CanFly = false
+		GoGo_Variables.ZoneExclude.CanFly = true
+	elseif GoGo_Variables.Player.MapID == 2151 then
+		GoGo_Variables.ZoneExclude.DragonRiding = true
+		if GoGo_Variables.Debug >= 10 then
+			GoGo_DebugAddLine("GoGo_ZoneCheck: The Forbidden Reach")
+		end --if
+		GoGo_Variables.ZoneExclude.CanFly = true
+	elseif GoGo_Variables.Player.MapID == 2133 then
+		GoGo_Variables.ZoneExclude.DragonRiding = true
+		if GoGo_Variables.Debug >= 10 then
+			GoGo_DebugAddLine("GoGo_ZoneCheck: Zaralek Cavern")
+		end --if
+		GoGo_Variables.ZoneExclude.CanFly = true
+	elseif GoGo_Variables.Player.MapID == 2199 then
+		GoGo_Variables.ZoneExclude.DragonRiding = true
+		if GoGo_Variables.Debug >= 10 then
+			GoGo_DebugAddLine("GoGo_ZoneCheck: Thaldraszus - Time Rift Event")
+		end --if
+		GoGo_Variables.ZoneExclude.CanFly = true
+	elseif GoGo_Variables.Player.MapID == 2200 then
+		GoGo_Variables.ZoneExclude.DragonRiding = true
+		if GoGo_Variables.Debug >= 10 then
+			GoGo_DebugAddLine("GoGo_ZoneCheck: Emerald Dream - Ancient Bough")
+		end --if
+		GoGo_Variables.ZoneExclude.CanFly = true
 --	elseif GoGo_Variables.Player.ZoneID == -1 then
 		-- Arenas:
 		-- -- Nagrand Arena
