@@ -4335,6 +4335,30 @@ function GoGo_ZoneCheck()
 			GoGo_DebugAddLine("GoGo_ZoneCheck: Emerald Dream - Ancient Bough")
 		end --if
 		GoGo_Variables.ZoneExclude.CanFly = true
+	elseif GoGo_Variables.Player.MapID == 2234 then
+		GoGo_Variables.ZoneExclude.DragonRiding = true
+		if GoGo_Variables.Debug >= 10 then
+			GoGo_DebugAddLine("GoGo_ZoneCheck: Amirdrassil, the Dream's Hope - Amirdrassil")
+		end --if
+		GoGo_Variables.ZoneExclude.CanFly = true
+	elseif GoGo_Variables.Player.MapID == 2237 then
+		GoGo_Variables.ZoneExclude.DragonRiding = true
+		if GoGo_Variables.Debug >= 10 then
+			GoGo_DebugAddLine("GoGo_ZoneCheck: Amirdrassil, the Dream's Hope - The Southern Bough")
+		end --if
+		GoGo_Variables.ZoneExclude.CanFly = true
+	elseif GoGo_Variables.Player.MapID == 2235 then
+		GoGo_Variables.ZoneExclude.DragonRiding = true
+		if GoGo_Variables.Debug >= 10 then
+			GoGo_DebugAddLine("GoGo_ZoneCheck: Amirdrassil, the Dream's Hope - The Northern Bough")
+		end --if
+		GoGo_Variables.ZoneExclude.CanFly = true
+	elseif GoGo_Variables.Player.MapID == 2236 then
+		GoGo_Variables.ZoneExclude.DragonRiding = true
+		if GoGo_Variables.Debug >= 10 then
+			GoGo_DebugAddLine("GoGo_ZoneCheck: Amirdrassil, the Dream's Hope - The Eastern Bough")
+		end --if
+		GoGo_Variables.ZoneExclude.CanFly = true
 --	elseif GoGo_Variables.Player.ZoneID == -1 then
 		-- Arenas:
 		-- -- Nagrand Arena
